@@ -1,7 +1,7 @@
 # android-on-linux
 ## Stable Connenction of Android to Linux
-* Merit to: [Archlinux Wiki](https://wiki.archlinux.org/title/Android_Debug_Bridge) 
-* Symptom-s: You connect your Android-Device to your Linux and the connection switch continuosily ON & OFF
+* **Merit to:** [Archlinux Wiki](https://wiki.archlinux.org/title/Android_Debug_Bridge) 
+* Symptom-s: You connect your Android-Device to your Linux over USB-cable and the connection switch continuosily ON & OFF
 
 ### 1. Install Prerequisite 
 
@@ -55,6 +55,15 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="0x2717", ATTRS{idProduct}=="0xff48", MODE="
 3. Let an empty line at end of file, save with [CTRL+O] & close with [CTRL+X]
 
 * **NOTE:** A file to copy with sudo-privilieges is already present, modify with your own `vendor id:` & `product id:`, save the file & copy it at destination replacing the underscore `_` with a slash `/`.
+
+### 4. Update udev
+* **Merit to:** [Archlinux-Wiki](https://wiki.archlinux.org/title/Udev#Loading_new_rules)
+* Use one or both of following command in order the `udev`-rules take effect immediately & stop ON/OFF of Android-Device:
+```
+sudo udevadm control --reload
+
+sudo udevadm trigger
+```
 
 
 ✅ Done & Enjoy❗️
