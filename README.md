@@ -40,6 +40,10 @@ SUBSYSTEM=="usb", ATTR{idVendor}=="[0x2717]", ATTR{idProduct}=="[0xff48]", SYMLI
 
 * **NOTE:** A file to copy with sudo-privilieges is already present, modify with your own `vendor id:` & `product id:`, save the file & copy it at destination replacing the underscore `_` with a slash `/`.
 
+* Here the complete command:
+
+` sudo cp _etc_udev_rules.d_51-android.rules /etc/udev/rules.d/51-android.rules`
+
 #### 3.2. Solution:
 1. Create a file with nano as follow:
 
@@ -55,6 +59,10 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="0x2717", ATTRS{idProduct}=="0xff48", MODE="
 3. Let an empty line at end of file, save with [CTRL+O] & close with [CTRL+X]
 
 * **NOTE:** A file to copy with sudo-privilieges is already present, modify with your own `vendor id:` & `product id:`, save the file & copy it at destination replacing the underscore `_` with a slash `/`.
+
+* Here the complete command:
+
+` sudo cp _etc_udev_rules.d_71-android.rules /etc/udev/rules.d/71-android.rules`
 
 ### 4. Update udev
 * **Merit to:** [Archlinux-Wiki](https://wiki.archlinux.org/title/Udev#Loading_new_rules)
