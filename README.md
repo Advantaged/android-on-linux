@@ -21,7 +21,7 @@ vendor id: 0x2717
 product id: 0xff48
 ```
 
-### 3. Make a udev-rule as for any device
+### 3. Make a udev-rule as for any device too
 #### 3.1. Solution:
 1. Create a file with nano as follow:
 
