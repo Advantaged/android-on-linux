@@ -44,6 +44,8 @@ SUBSYSTEM=="usb", ATTR{idVendor}=="[0x2717]", ATTR{idProduct}=="[0xff48]", SYMLI
 
 ` sudo cp _etc_udev_rules.d_51-android.rules /etc/udev/rules.d/51-android.rules`
 
+* **NOTE:** Use only one of the two Solutions **!**
+
 #### 3.2. Solution:
 1. Create a file with nano as follow:
 
@@ -63,6 +65,8 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="0x2717", ATTRS{idProduct}=="0xff48", MODE="
 * Here the complete command:
 
 ` sudo cp _etc_udev_rules.d_71-android.rules /etc/udev/rules.d/71-android.rules`
+
+* **NOTE:** Use only one of the two Solutions **!**
 
 ### 4. Update udev
 * **Merit to:** [Archlinux-Wiki](https://wiki.archlinux.org/title/Udev#Loading_new_rules)
