@@ -77,6 +77,10 @@ sudo udevadm control --reload
 sudo udevadm trigger
 ```
 
+### 5. Enable & CHeck
+1. Enable in case again `Settings > Developer > USB debugging` on your phone.
+2. Check if your phone is now listed & stable connencted qith: `adb devices` as normal user.
+
 
 ✅ Done & Enjoy❗️
 
